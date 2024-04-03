@@ -1,0 +1,228 @@
+// [START] Section Discover ======================================================================================
+.discover {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	width: 100%;
+	margin-top: 70px;
+	@media (max-width: $breakpoint992) {
+		margin-top: 40px;
+	}
+	@media (max-width: $breakpoint768) {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 34px;
+	}
+	// .discover__container
+	&__container {
+		max-width: 1400px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	// .discover__item
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	// .discover__image
+	&__image {
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+	}
+	// .discover__title
+	&__title {
+		margin-top: 40px;
+		margin-bottom: 44px;
+		font-size: 15px;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 1.2;
+		@media (max-width: $breakpoint992) {
+			margin: 20px 0;
+		}
+
+		span {
+			display: block;
+			margin-top: 6px;
+		}
+	}
+	// .discover__link
+	&__link {
+		color: #000;
+		font-size: 12.5px;
+		text-underline-offset: 4px;
+		transition: 0.3s all;
+		&:hover {
+			text-underline-offset: 8px;
+		}
+	}
+}
+// [END] Section Discover ========================================================================================
+
+// [START] Section Press =========================================================================================
+.section {
+	// .section__press
+	&__press {
+		padding: 0;
+	}
+}
+.press {
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 50px;
+	margin-top: 70px;
+	@media (max-width: $breakpoint992) {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+	// .press__container
+	&__container {
+		max-width: 1880px;
+		width: 100%;
+		margin: 0 auto;
+		background: #faf9f7;
+		padding: 80px 0;
+		@media (max-width: $breakpoint992) {
+			padding: 40px 0;
+			max-width: 100%;
+		}
+	}
+	// .press__item
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			@media (max-width: 600px) {
+				max-width: 70px;
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+// [END] Section Press ===========================================================================================
+
+// [START] Section Love ==========================================================================================
+.section {
+	// .section__love
+	&__love {
+		margin-top: 140px;
+		@media (max-width: $breakpoint992) {
+			margin-top: 0;
+		}
+	}
+}
+.love {
+	// .love__container
+	&__container {
+		max-width: 1400px;
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+		z-index: 0;
+	}
+	// .love__image
+	&__image {
+		position: absolute;
+		right: 20px;
+		top: -132px;
+		z-index: -1;
+		@media (max-width: $breakpoint992) {
+			position: static;
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+			margin-left: 10px;
+		}
+	}
+	// .love__label
+	&__label {
+		position: absolute;
+		right: -66px;
+		top: -60px;
+		font-size: 10.417px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+		text-align: center;
+		-moz-transform: matrix(0, -1, 1, 0, 0, 0);
+		-webkit-transform: matrix(0, -1, 1, 0, 0, 0);
+		-ms-transform: matrix(0, -1, 1, 0, 0, 0);
+		@media (max-width: $breakpoint992) {
+			right: unset;
+			left: -76px;
+			top: 70px;
+		}
+	}
+	// .love__item
+	&__item {
+		padding: 70px 55px 36px 41px;
+		background: #fff;
+		max-width: 460px;
+		width: 100%;
+		text-wrap: balance;
+		margin-left: 200px;
+		@media (max-width: $breakpoint1200) {
+			margin-left: 100px;
+		}
+		@media (max-width: $breakpoint992) {
+			padding: 0;
+			margin: 0;
+			max-width: 100%;
+		}
+	}
+	// .love__title
+	&__title {
+		font-size: 31.25px;
+		line-height: 1.2;
+		text-align: center;
+		margin-bottom: 10px;
+		@media (max-width: $breakpoint992) {
+			display: none;
+		}
+	}
+	// .love__text
+	&__text {
+		font-size: 12.5px;
+		line-height: 2;
+		text-align: center;
+		margin-top: 40px;
+		@media (max-width: $breakpoint992) {
+			text-align: justify;
+			margin-top: 24px;
+			margin-left: 10px;
+		}
+	}
+	// .love__link
+	&__link {
+		margin-top: 70px;
+		display: flex;
+		max-width: fit-content;
+		margin-left: auto;
+		font-size: 12.5px;
+		line-height: 1.2;
+		color: #000;
+		text-underline-offset: 4px;
+		transition: 0.3s all;
+		&:hover {
+			text-underline-offset: 8px;
+		}
+		@media (max-width: $breakpoint992) {
+			margin: 30px auto 0;
+		}
+	}
+}
+// [END] Section Love ============================================================================================
+
+// [START] Section Discover ======================================================================================
+// [END] Section Discover ========================================================================================
+
+// [START] Section Discover ======================================================================================
+// [END] Section Discover ========================================================================================
+
+// [START] Section Discover ======================================================================================
+// [END] Section Discover ========================================================================================
