@@ -2,17 +2,44 @@
 function burgerMenu() {
 	const burger = document.querySelector('.burger')
 	const menu = document.querySelector('.menu')
+	const mobileMenuWrapper = document.querySelector('.mobile__menu-wrapper')
+	const mobileMenuClose = document.querySelector('.mobile__menu-close')
 	const body = document.querySelector('body')
+
 	burger.addEventListener('click', () => {
 		if (!menu.classList.contains('active')) {
 			menu.classList.add('active')
 			burger.classList.add('active')
 			body.classList.add('locked')
+			mobileMenuWrapper.classList.add('active')
+			setTimeout(() => {
+				mobileMenuWrapper.style.background = 'rgba(252, 245, 239, 0.6)'
+			}, 100)
 		} else {
 			menu.classList.remove('active')
 			burger.classList.remove('active')
 			body.classList.remove('locked')
+			mobileMenuWrapper.classList.remove('active')
+			mobileMenuWrapper.style.background = 'transparent'
 		}
+	})
+
+	mobileMenuWrapper.addEventListener('click', (e) => {
+		if (e.target.classList.contains('mobile__menu-wrapper')) {
+			mobileMenuWrapper.classList.remove('active')
+			menu.classList.remove('active')
+			burger.classList.remove('active')
+			body.classList.remove('locked')
+			mobileMenuWrapper.style.background = 'transparent'
+		}
+	})
+
+	mobileMenuClose.addEventListener('click', () => {
+		mobileMenuWrapper.classList.remove('active')
+		menu.classList.remove('active')
+		burger.classList.remove('active')
+		body.classList.remove('locked')
+		mobileMenuWrapper.style.background = 'transparent'
 	})
 	// Вот тут мы ставим брейкпоинт навбара
 	window.addEventListener('resize', () => {
@@ -34,10 +61,22 @@ function fixedHeader() {
 	}
 }
 window.addEventListener('scroll', fixedHeader)
+// Mobile Dropdown
+function toggleMobileDropdown() {
+	const trigger = document.querySelector('.mobile__dropdown-button')
+	const content = document.querySelector('.mobile__dropdown-content')
+	const arrowIcon = document.querySelector('.mobile__menu-arrow')
 
+	trigger.addEventListener('click', () => {
+		slideToggle(content)
+		arrowIcon.classList.toggle('active')
+	})
+}
+toggleMobileDropdown()
 // Ambassador Slider
 const swiper = new Swiper('.swiper__ambassadors', {
 	loop: true,
+	parallax: true,
 	centeredSlides: true,
 	// Navigation arrows
 	navigation: {

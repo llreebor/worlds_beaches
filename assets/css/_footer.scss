@@ -1,6 +1,9 @@
 footer {
 	padding: 40px 0;
 	border-top: 1px solid #d4d3d1;
+	@media (max-width: $breakpoint768) {
+		padding-top: 10px;
+	}
 }
 .footer {
 	display: flex;
@@ -21,6 +24,9 @@ footer {
 		gap: 40px;
 		display: flex;
 		flex: 1 1 auto;
+		@media (max-width: $breakpoint768) {
+			gap: 24px;
+		}
 	}
 	// .footer__info
 	&__info {

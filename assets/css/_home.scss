@@ -52,11 +52,7 @@
 	&__link {
 		color: #000;
 		font-size: 12.5px;
-		text-underline-offset: 4px;
-		transition: 0.3s all;
-		&:hover {
-			text-underline-offset: 8px;
-		}
+		text-underline-offset: 8px;
 	}
 }
 // [END] Section Discover ========================================================================================
@@ -119,6 +115,14 @@
 		@media (max-width: $breakpoint992) {
 			margin-top: 0;
 		}
+
+		.section__love-title {
+			display: none;
+			@media (max-width: $breakpoint992) {
+				display: block;
+				margin-bottom: 25px;
+			}
+		}
 	}
 }
 .love {
@@ -131,48 +135,53 @@
 		z-index: 0;
 		padding: 0 20px;
 		@media (max-width: $breakpoint992) {
-			padding: 0 40px 0 20px;
+			padding: 0 30px;
 		}
 	}
 	// .love__image
 	&__image {
 		position: absolute;
 		right: 20px;
-		top: -132px;
+		top: -56px;
 		z-index: -1;
 		@media (max-width: $breakpoint992) {
 			position: static;
 			max-width: 100%;
 			width: 100%;
 			height: auto;
-			margin-left: 10px;
 		}
 	}
 	// .love__label
 	&__label {
 		position: absolute;
-		right: -66px;
-		top: -60px;
+		right: -86px;
+		top: 35px;
 		font-size: 10.417px;
 		color: rgb(0, 0, 0);
 		line-height: 1.2;
 		text-align: center;
+		letter-spacing: 2px;
 		-moz-transform: matrix(0, -1, 1, 0, 0, 0);
 		-webkit-transform: matrix(0, -1, 1, 0, 0, 0);
 		-ms-transform: matrix(0, -1, 1, 0, 0, 0);
 		@media (max-width: $breakpoint992) {
 			right: unset;
-			left: -56px;
-			top: 70px;
+			left: -84px;
+			top: 146px;
+		}
+		@media (max-width: $breakpoint768) {
+			top: 140px;
+		}
+		@media (max-width: 518px) {
+			top: 160px;
 		}
 	}
 	// .love__item
 	&__item {
-		padding: 70px 55px 36px 41px;
+		padding: 70px 55px 36px 21px;
 		background: #fff;
 		max-width: 460px;
 		width: 100%;
-		text-wrap: balance;
 		margin-left: 200px;
 		@media (max-width: $breakpoint1200) {
 			margin-left: 100px;
@@ -189,6 +198,7 @@
 		line-height: 1.2;
 		text-align: center;
 		margin-bottom: 10px;
+		text-wrap: balance;
 		@media (max-width: $breakpoint992) {
 			display: none;
 		}
@@ -200,7 +210,7 @@
 		text-align: center;
 		margin-top: 40px;
 		@media (max-width: $breakpoint992) {
-			text-align: justify;
+			text-align: left;
 			margin-top: 24px;
 			margin-left: 10px;
 		}
@@ -214,11 +224,9 @@
 		font-size: 12.5px;
 		line-height: 1.2;
 		color: #000;
-		text-underline-offset: 4px;
+		text-underline-offset: 8px;
 		transition: 0.3s all;
-		&:hover {
-			text-underline-offset: 8px;
-		}
+
 		@media (max-width: $breakpoint992) {
 			margin: 30px auto 0;
 		}
@@ -231,6 +239,10 @@
 	// .section__ambassadors
 	&__ambassadors {
 		overflow: hidden;
+		margin-bottom: -100px;
+		@media (max-width: $breakpoint992) {
+			margin-bottom: 0;
+		}
 	}
 }
 .ambassadors {
@@ -245,6 +257,8 @@
 			padding: 0 20px;
 			a {
 				color: #000;
+				letter-spacing: 3px;
+				text-underline-offset: 4px;
 				text-decoration: underline;
 			}
 		}
@@ -286,18 +300,19 @@
 				transform: rotate(90deg);
 			}
 		}
+
+		.swiper-slide-active {
+			.slide__content {
+				@media (max-width: $breakpoint992) {
+					opacity: 1;
+				}
+			}
+		}
 	}
 }
 .ambassador {
 	// .ambassador__slide
 	&__slide {
-		position: relative;
-		overflow: hidden;
-		&:hover {
-			.slide__overlay {
-				opacity: 1;
-			}
-		}
 		img {
 			max-width: 100%;
 			width: 100%;
@@ -306,6 +321,57 @@
 	}
 }
 .slide {
+	// .slide__image
+	&__image {
+		position: relative;
+		overflow: hidden;
+		&:hover {
+			.slide__overlay {
+				opacity: 1;
+			}
+		}
+	}
+	// .slide__content
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+		margin-top: 20px;
+		opacity: 0;
+	}
+	// .slide__content-title
+	&__content-title {
+		font-size: 16.667px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+		text-align: center;
+	}
+	// .slide__content-link
+	&__content-link {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 11.667px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+		text-align: center;
+		text-decoration: none;
+		position: relative;
+		&:after {
+			position: absolute;
+			content: '';
+			height: 1px;
+			width: 100%;
+			background: #fff;
+			left: 0;
+			bottom: -4px;
+		}
+		img {
+			width: 12px;
+		}
+	}
 	// .slide__overlay
 	&__overlay {
 		position: absolute;
@@ -333,6 +399,9 @@
 	// .slide__overlay-icon
 	&__overlay-icon {
 		width: 40px !important;
+		@media (max-width: $breakpoint992) {
+			display: none;
+		}
 	}
 	// .slide__overlay-title
 	&__overlay-title {
@@ -342,10 +411,7 @@
 		line-height: 1.2;
 		text-align: center;
 		@media (max-width: $breakpoint992) {
-			font-size: 20px;
-		}
-		@media (max-width: $breakpoint768) {
-			font-size: 16px;
+			display: none;
 		}
 	}
 	// .slide__overlay-text
@@ -355,21 +421,37 @@
 		line-height: 1.667;
 		text-align: center;
 		@media (max-width: $breakpoint992) {
-			font-size: 10px;
-		}
-		@media (max-width: $breakpoint768) {
 			display: none;
 		}
 	}
+
 	// .slide__overlay-link
 	&__overlay-link {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		gap: 8px;
 		font-size: 12.5px;
+		width: 100%;
 		color: rgb(255, 255, 255);
 		line-height: 1.2;
-		text-underline-offset: 4px;
+		max-width: fit-content;
+		position: relative;
+		text-decoration: none;
+
+		&:after {
+			position: absolute;
+			content: '';
+			height: 1px;
+			width: 100%;
+			background: #fff;
+			left: 0;
+			bottom: -4px;
+		}
+
+		@media (max-width: $breakpoint992) {
+			display: none;
+		}
 
 		img {
 			width: 14px;
@@ -377,9 +459,3 @@
 	}
 }
 // [END] Section Ambassadors =====================================================================================
-
-// [START] Section Discover ======================================================================================
-// [END] Section Discover ========================================================================================
-
-// [START] Section Discover ======================================================================================
-// [END] Section Discover ========================================================================================

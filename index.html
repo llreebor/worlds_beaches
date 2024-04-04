@@ -16,9 +16,6 @@
 			rel="stylesheet" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
 		<link rel="stylesheet" href="./assets/css/swiper.min.css" />
-		<!-- <link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
 	</head>
 	<body>
 		<!-- Header -->
@@ -33,6 +30,7 @@
 							src="./assets/images/mobile__logo.png"
 							alt="logo" />
 					</div>
+					<!-- Menu -->
 					<ul class="menu">
 						<li class="menu__item with__submenu">
 							<a class="menu__link" href="#">
@@ -88,6 +86,91 @@
 							</a>
 						</li>
 					</ul>
+
+					<!-- Mobile Menu -->
+					<div class="mobile__menu-wrapper">
+						<div class="mobile__menu">
+							<div class="mobile__menu-header">
+								<img
+									src="./assets/images/mobile__logo.png"
+									alt="logo" />
+								<button class="mobile__menu-close">
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M11.3257 9.99992L15.0366 6.28898C15.2128 6.11317 15.3118 5.8746 15.312 5.62575C15.3123 5.37689 15.2136 5.13815 15.0378 4.96203C14.862 4.78591 14.6234 4.68684 14.3746 4.68662C14.1257 4.6864 13.887 4.78505 13.7109 4.96085L9.99992 8.67179L6.28898 4.96085C6.11286 4.78473 5.87399 4.68579 5.62492 4.68579C5.37585 4.68579 5.13698 4.78473 4.96085 4.96085C4.78473 5.13698 4.68579 5.37585 4.68579 5.62492C4.68579 5.87399 4.78473 6.11286 4.96085 6.28898L8.67179 9.99992L4.96085 13.7109C4.78473 13.887 4.68579 14.1258 4.68579 14.3749C4.68579 14.624 4.78473 14.8629 4.96085 15.039C5.13698 15.2151 5.37585 15.314 5.62492 15.314C5.87399 15.314 6.11286 15.2151 6.28898 15.039L9.99992 11.328L13.7109 15.039C13.887 15.2151 14.1258 15.314 14.3749 15.314C14.624 15.314 14.8629 15.2151 15.039 15.039C15.2151 14.8629 15.314 14.624 15.314 14.3749C15.314 14.1258 15.2151 13.887 15.039 13.7109L11.3257 9.99992Z"
+											fill="black" />
+									</svg>
+								</button>
+							</div>
+							<div class="mobile__menu-content">
+								<ul class="mobile__menu-list">
+									<li>
+										<div class="mobile__dropdown-button">
+											<span>THE LISTS</span>
+											<img
+												class="mobile__menu-arrow"
+												src="./assets/images/dropdown-arrow.svg"
+												alt="arrow" />
+										</div>
+
+										<ul class="mobile__dropdown-content">
+											<li><a href="#">THE WORLD</a></li>
+											<li><a href="#">EUROPE</a></li>
+											<li>
+												<a href="#">NORTH AMERICA</a>
+											</li>
+										</ul>
+									</li>
+									<li><a href="#">BEST OF THE BEST</a></li>
+									<li><a href="#">DESTINATIONS</a></li>
+									<li><a href="#">BEACH AMBASSADORS</a></li>
+									<li><a href="#">JUDGES</a></li>
+									<li><a href="#">ABOUT</a></li>
+								</ul>
+
+								<ul class="mobile__menu-list">
+									<li><a href="#">CONTACT US</a></li>
+									<li><a href="#">PRESS ROOM</a></li>
+								</ul>
+
+								<ul class="mobile__menu-social">
+									<li>
+										<a href="#" target="_blank">
+											<img
+												src="./assets/images/inst.svg"
+												alt="icon" />
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<img
+												src="./assets/images/yt.svg"
+												alt="icon" />
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<img
+												src="./assets/images/tw.svg"
+												alt="icon" />
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<img
+												src="./assets/images/fb.svg"
+												alt="icon" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</nav>
 			</header>
 
@@ -234,6 +317,9 @@
 			<!-- Section Love -->
 			<section class="section__love">
 				<div class="love__container">
+					<h2 class="section__love-title">
+						FOR THE LOVE OF BEACHES.
+					</h2>
 					<div class="love">
 						<img
 							class="love__image"
@@ -277,35 +363,55 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="ambassador__slide">
-									<img
-										src="./assets/images/slider-img.jpg"
-										alt="slider image" />
-
-									<div class="slide__overlay">
+									<div class="slide__image">
 										<img
-											class="slide__overlay-icon"
-											src="./assets/images/slide_overlay_icon.svg"
-											alt="icon" />
+											src="./assets/images/slider-img.jpg"
+											alt="slider image" />
+										<div class="slide__overlay">
+											<img
+												class="slide__overlay-icon"
+												src="./assets/images/slide__overlay-icon.png"
+												alt="icon" />
 
-										<p class="slide__overlay-title">
+											<p class="slide__overlay-title">
+												NATALIE
+											</p>
+											<p class="slide__overlay-text">
+												Our world is filled with
+												seemingly endless beaches, so to
+												make sure you know exactly which
+												ones to put on the very top. Our
+												world is filled with seemingly
+												endless beaches, so to make sure
+												you know exactly which ones to
+												put on the very top.
+											</p>
+											<a
+												href="#"
+												target="_blank"
+												class="slide__overlay-link">
+												<span>INSTAGRAM</span>
+
+												<img
+													src="./assets/images/link-icon.svg"
+													alt="icon" />
+											</a>
+										</div>
+									</div>
+
+									<div
+										class="slide__content"
+										data-swiper-parallax-y="10">
+										<p class="slide__content-title">
 											NATALIE
-										</p>
-										<p class="slide__overlay-text">
-											Our world is filled with seemingly
-											endless beaches, so to make sure you
-											know exactly which ones to put on
-											the very top. Our world is filled
-											with seemingly endless beaches, so
-											to make sure you know exactly which
-											ones to put on the very top.
 										</p>
 										<a
 											href="#"
 											target="_blank"
-											class="slide__overlay-link">
+											class="slide__content-link">
 											<span>INSTAGRAM</span>
 											<img
-												src="./assets/images/link-icon.svg"
+												src="./assets/images/link-icon-black.svg"
 												alt="icon" />
 										</a>
 									</div>
@@ -313,34 +419,55 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="ambassador__slide">
-									<img
-										src="./assets/images/slider-1.avif"
-										alt="slider image" />
-									<div class="slide__overlay">
+									<div class="slide__image">
 										<img
-											class="slide__overlay-icon"
-											src="./assets/images/slide_overlay_icon.svg"
-											alt="icon" />
+											src="./assets/images/slider-1.avif"
+											alt="slider image" />
+										<div class="slide__overlay">
+											<img
+												class="slide__overlay-icon"
+												src="./assets/images/slide__overlay-icon.png"
+												alt="icon" />
 
-										<p class="slide__overlay-title">
+											<p class="slide__overlay-title">
+												NATALIE
+											</p>
+											<p class="slide__overlay-text">
+												Our world is filled with
+												seemingly endless beaches, so to
+												make sure you know exactly which
+												ones to put on the very top. Our
+												world is filled with seemingly
+												endless beaches, so to make sure
+												you know exactly which ones to
+												put on the very top.
+											</p>
+											<a
+												href="#"
+												target="_blank"
+												class="slide__overlay-link">
+												<span>INSTAGRAM</span>
+
+												<img
+													src="./assets/images/link-icon.svg"
+													alt="icon" />
+											</a>
+										</div>
+									</div>
+
+									<div
+										class="slide__content"
+										data-swiper-parallax-y="10">
+										<p class="slide__content-title">
 											NATALIE
-										</p>
-										<p class="slide__overlay-text">
-											Our world is filled with seemingly
-											endless beaches, so to make sure you
-											know exactly which ones to put on
-											the very top. Our world is filled
-											with seemingly endless beaches, so
-											to make sure you know exactly which
-											ones to put on the very top.
 										</p>
 										<a
 											href="#"
 											target="_blank"
-											class="slide__overlay-link">
+											class="slide__content-link">
 											<span>INSTAGRAM</span>
 											<img
-												src="./assets/images/link-icon.svg"
+												src="./assets/images/link-icon-black.svg"
 												alt="icon" />
 										</a>
 									</div>
@@ -348,34 +475,55 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="ambassador__slide">
-									<img
-										src="./assets/images/slider-2.avif"
-										alt="slider image" />
-									<div class="slide__overlay">
+									<div class="slide__image">
 										<img
-											class="slide__overlay-icon"
-											src="./assets/images/slide_overlay_icon.svg"
-											alt="icon" />
+											src="./assets/images/slider-2.avif"
+											alt="slider image" />
+										<div class="slide__overlay">
+											<img
+												class="slide__overlay-icon"
+												src="./assets/images/slide__overlay-icon.png"
+												alt="icon" />
 
-										<p class="slide__overlay-title">
+											<p class="slide__overlay-title">
+												NATALIE
+											</p>
+											<p class="slide__overlay-text">
+												Our world is filled with
+												seemingly endless beaches, so to
+												make sure you know exactly which
+												ones to put on the very top. Our
+												world is filled with seemingly
+												endless beaches, so to make sure
+												you know exactly which ones to
+												put on the very top.
+											</p>
+											<a
+												href="#"
+												target="_blank"
+												class="slide__overlay-link">
+												<span>INSTAGRAM</span>
+
+												<img
+													src="./assets/images/link-icon.svg"
+													alt="icon" />
+											</a>
+										</div>
+									</div>
+
+									<div
+										class="slide__content"
+										data-swiper-parallax-y="10">
+										<p class="slide__content-title">
 											NATALIE
-										</p>
-										<p class="slide__overlay-text">
-											Our world is filled with seemingly
-											endless beaches, so to make sure you
-											know exactly which ones to put on
-											the very top. Our world is filled
-											with seemingly endless beaches, so
-											to make sure you know exactly which
-											ones to put on the very top.
 										</p>
 										<a
 											href="#"
 											target="_blank"
-											class="slide__overlay-link">
+											class="slide__content-link">
 											<span>INSTAGRAM</span>
 											<img
-												src="./assets/images/link-icon.svg"
+												src="./assets/images/link-icon-black.svg"
 												alt="icon" />
 										</a>
 									</div>
@@ -383,34 +531,55 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="ambassador__slide">
-									<img
-										src="./assets/images/slider-3.avif"
-										alt="slider image" />
-									<div class="slide__overlay">
+									<div class="slide__image">
 										<img
-											class="slide__overlay-icon"
-											src="./assets/images/slide_overlay_icon.svg"
-											alt="icon" />
+											src="./assets/images/slider-3.avif"
+											alt="slider image" />
+										<div class="slide__overlay">
+											<img
+												class="slide__overlay-icon"
+												src="./assets/images/slide__overlay-icon.png"
+												alt="icon" />
 
-										<p class="slide__overlay-title">
+											<p class="slide__overlay-title">
+												NATALIE
+											</p>
+											<p class="slide__overlay-text">
+												Our world is filled with
+												seemingly endless beaches, so to
+												make sure you know exactly which
+												ones to put on the very top. Our
+												world is filled with seemingly
+												endless beaches, so to make sure
+												you know exactly which ones to
+												put on the very top.
+											</p>
+											<a
+												href="#"
+												target="_blank"
+												class="slide__overlay-link">
+												<span>INSTAGRAM</span>
+
+												<img
+													src="./assets/images/link-icon.svg"
+													alt="icon" />
+											</a>
+										</div>
+									</div>
+
+									<div
+										class="slide__content"
+										data-swiper-parallax-y="10">
+										<p class="slide__content-title">
 											NATALIE
-										</p>
-										<p class="slide__overlay-text">
-											Our world is filled with seemingly
-											endless beaches, so to make sure you
-											know exactly which ones to put on
-											the very top. Our world is filled
-											with seemingly endless beaches, so
-											to make sure you know exactly which
-											ones to put on the very top.
 										</p>
 										<a
 											href="#"
 											target="_blank"
-											class="slide__overlay-link">
+											class="slide__content-link">
 											<span>INSTAGRAM</span>
 											<img
-												src="./assets/images/link-icon.svg"
+												src="./assets/images/link-icon-black.svg"
 												alt="icon" />
 										</a>
 									</div>
@@ -418,34 +587,55 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="ambassador__slide">
-									<img
-										src="./assets/images/slider-4.avif"
-										alt="slider image" />
-									<div class="slide__overlay">
+									<div class="slide__image">
 										<img
-											class="slide__overlay-icon"
-											src="./assets/images/slide_overlay_icon.svg"
-											alt="icon" />
+											src="./assets/images/slider-4.avif"
+											alt="slider image" />
+										<div class="slide__overlay">
+											<img
+												class="slide__overlay-icon"
+												src="./assets/images/slide__overlay-icon.png"
+												alt="icon" />
 
-										<p class="slide__overlay-title">
+											<p class="slide__overlay-title">
+												NATALIE
+											</p>
+											<p class="slide__overlay-text">
+												Our world is filled with
+												seemingly endless beaches, so to
+												make sure you know exactly which
+												ones to put on the very top. Our
+												world is filled with seemingly
+												endless beaches, so to make sure
+												you know exactly which ones to
+												put on the very top.
+											</p>
+											<a
+												href="#"
+												target="_blank"
+												class="slide__overlay-link">
+												<span>INSTAGRAM</span>
+
+												<img
+													src="./assets/images/link-icon.svg"
+													alt="icon" />
+											</a>
+										</div>
+									</div>
+
+									<div
+										class="slide__content"
+										data-swiper-parallax-y="10">
+										<p class="slide__content-title">
 											NATALIE
-										</p>
-										<p class="slide__overlay-text">
-											Our world is filled with seemingly
-											endless beaches, so to make sure you
-											know exactly which ones to put on
-											the very top. Our world is filled
-											with seemingly endless beaches, so
-											to make sure you know exactly which
-											ones to put on the very top.
 										</p>
 										<a
 											href="#"
 											target="_blank"
-											class="slide__overlay-link">
+											class="slide__content-link">
 											<span>INSTAGRAM</span>
 											<img
-												src="./assets/images/link-icon.svg"
+												src="./assets/images/link-icon-black.svg"
 												alt="icon" />
 										</a>
 									</div>
@@ -453,34 +643,55 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="ambassador__slide">
-									<img
-										src="./assets/images/slider-5.avif"
-										alt="slider image" />
-									<div class="slide__overlay">
+									<div class="slide__image">
 										<img
-											class="slide__overlay-icon"
-											src="./assets/images/slide_overlay_icon.svg"
-											alt="icon" />
+											src="./assets/images/slider-5.avif"
+											alt="slider image" />
+										<div class="slide__overlay">
+											<img
+												class="slide__overlay-icon"
+												src="./assets/images/slide__overlay-icon.png"
+												alt="icon" />
 
-										<p class="slide__overlay-title">
+											<p class="slide__overlay-title">
+												NATALIE
+											</p>
+											<p class="slide__overlay-text">
+												Our world is filled with
+												seemingly endless beaches, so to
+												make sure you know exactly which
+												ones to put on the very top. Our
+												world is filled with seemingly
+												endless beaches, so to make sure
+												you know exactly which ones to
+												put on the very top.
+											</p>
+											<a
+												href="#"
+												target="_blank"
+												class="slide__overlay-link">
+												<span>INSTAGRAM</span>
+
+												<img
+													src="./assets/images/link-icon.svg"
+													alt="icon" />
+											</a>
+										</div>
+									</div>
+
+									<div
+										class="slide__content"
+										data-swiper-parallax-y="10">
+										<p class="slide__content-title">
 											NATALIE
-										</p>
-										<p class="slide__overlay-text">
-											Our world is filled with seemingly
-											endless beaches, so to make sure you
-											know exactly which ones to put on
-											the very top. Our world is filled
-											with seemingly endless beaches, so
-											to make sure you know exactly which
-											ones to put on the very top.
 										</p>
 										<a
 											href="#"
 											target="_blank"
-											class="slide__overlay-link">
+											class="slide__content-link">
 											<span>INSTAGRAM</span>
 											<img
-												src="./assets/images/link-icon.svg"
+												src="./assets/images/link-icon-black.svg"
 												alt="icon" />
 										</a>
 									</div>
@@ -488,34 +699,55 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="ambassador__slide">
-									<img
-										src="./assets/images/slider-6.avif"
-										alt="slider image" />
-									<div class="slide__overlay">
+									<div class="slide__image">
 										<img
-											class="slide__overlay-icon"
-											src="./assets/images/slide_overlay_icon.svg"
-											alt="icon" />
+											src="./assets/images/slider-6.avif"
+											alt="slider image" />
+										<div class="slide__overlay">
+											<img
+												class="slide__overlay-icon"
+												src="./assets/images/slide__overlay-icon.png"
+												alt="icon" />
 
-										<p class="slide__overlay-title">
+											<p class="slide__overlay-title">
+												NATALIE
+											</p>
+											<p class="slide__overlay-text">
+												Our world is filled with
+												seemingly endless beaches, so to
+												make sure you know exactly which
+												ones to put on the very top. Our
+												world is filled with seemingly
+												endless beaches, so to make sure
+												you know exactly which ones to
+												put on the very top.
+											</p>
+											<a
+												href="#"
+												target="_blank"
+												class="slide__overlay-link">
+												<span>INSTAGRAM</span>
+
+												<img
+													src="./assets/images/link-icon.svg"
+													alt="icon" />
+											</a>
+										</div>
+									</div>
+
+									<div
+										class="slide__content"
+										data-swiper-parallax-y="10">
+										<p class="slide__content-title">
 											NATALIE
-										</p>
-										<p class="slide__overlay-text">
-											Our world is filled with seemingly
-											endless beaches, so to make sure you
-											know exactly which ones to put on
-											the very top. Our world is filled
-											with seemingly endless beaches, so
-											to make sure you know exactly which
-											ones to put on the very top.
 										</p>
 										<a
 											href="#"
 											target="_blank"
-											class="slide__overlay-link">
+											class="slide__content-link">
 											<span>INSTAGRAM</span>
 											<img
-												src="./assets/images/link-icon.svg"
+												src="./assets/images/link-icon-black.svg"
 												alt="icon" />
 										</a>
 									</div>
