@@ -170,8 +170,10 @@ footer {
 		font-size: 13.333px;
 		color: #000;
 		line-height: 1.2;
+		font-family: 'Montserrat', sans-serif;
 		&::placeholder {
 			color: #000;
+			letter-spacing: 0.06em;
 		}
 		&:focus {
 			border-color: #000;
@@ -182,6 +184,7 @@ footer {
 		font-size: 10px;
 		color: #000;
 		line-height: 1.667;
+		letter-spacing: 0.06em;
 		a {
 			color: #000;
 		}
@@ -197,7 +200,9 @@ footer {
 		padding: 12px 32px;
 		border: 1px solid #d4d3d1;
 		background: transparent;
+		font-family: 'Montserrat', sans-serif;
 		cursor: pointer;
+		letter-spacing: 0.06em;
 		&:hover {
 			background: #f9f9f9;
 		}
