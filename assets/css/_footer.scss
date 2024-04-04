@@ -7,6 +7,7 @@ footer {
 	gap: 45px;
 	@media (max-width: $breakpoint768) {
 		flex-direction: column;
+		gap: 35px;
 	}
 	// .footer__container
 	&__container {
@@ -59,6 +60,7 @@ footer {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
 		img {
 			display: none;
 			@media (max-width: $breakpoint600) {
@@ -124,6 +126,20 @@ footer {
 		width: 100%;
 		@media (max-width: $breakpoint768) {
 			max-width: 100%;
+			.footer__title {
+				justify-content: center;
+				text-align: center;
+			}
+		}
+	}
+
+	&__copy {
+		font-size: 10px;
+		color: rgb(0, 0, 0);
+		line-height: 1.667;
+		@media (max-width: $breakpoint768) {
+			margin: 30px auto 0;
+			text-align: center;
 		}
 	}
 }
@@ -172,12 +188,29 @@ footer {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 16px 32px;
+		padding: 12px 32px;
 		border: 1px solid #d4d3d1;
 		background: transparent;
 		cursor: pointer;
 		&:hover {
 			background: #f9f9f9;
+		}
+	}
+}
+.accordion {
+	.accordion__item {
+		// Active state styles
+		&.accordion__item-active {
+			.accordion__item-content {
+				display: block;
+			}
+		}
+
+		// Content styles
+		.accordion__item-content {
+			@media (max-width: $breakpoint600) {
+				display: none;
+			}
 		}
 	}
 }

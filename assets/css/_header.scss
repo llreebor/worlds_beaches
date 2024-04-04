@@ -9,8 +9,9 @@
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
+	z-index: 20;
 
-	img {
+	.hero__img {
 		@media (max-width: $breakpoint768) {
 			max-width: 288px;
 			width: 100%;
@@ -19,13 +20,249 @@
 	}
 }
 header {
-	background: rgba($color: #ffffff, $alpha: 0.5);
 	width: 100%;
 	position: fixed;
 	left: 0;
-	top: 0;
-	height: 50px;
+	top: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 10px;
+	@media (max-width: $breakpoint992) {
+		top: 10px;
+		padding: 20px;
+	}
+	&.active {
+		top: 0;
+		transition: top 0.3s;
+		background-color: rgba(252, 245, 239, 0.7);
+		@media (max-width: $breakpoint992) {
+			background: white;
+			padding: 20px;
+		}
+
+		.header {
+			max-width: 1400px;
+		}
+		.menu__link {
+			color: #000;
+		}
+		.header__inst {
+			fill: #000;
+		}
+		.menu__logo {
+			display: block;
+		}
+		.mobile__logo {
+			@media (max-width: $breakpoint992) {
+				display: flex;
+				flex-grow: 1;
+				justify-content: center;
+				z-index: 21;
+				margin-left: -30px;
+				pointer-events: none;
+			}
+		}
+		.submenu__list {
+			background-color: rgba(252, 245, 239, 0.7);
+			@media (max-width: $breakpoint992) {
+				background: transparent;
+			}
+			a {
+				color: #000;
+			}
+		}
+
+		.burger {
+			span,
+			&:before,
+			&:after {
+				background: #000;
+			}
+		}
+	}
+}
+.header {
+	max-width: 1000px;
+	width: 100%;
+	@media (max-width: $breakpoint992) {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	.mobile__logo {
+		display: none;
+	}
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media (max-width: $breakpoint992) {
+		display: none;
+	}
+	&.active {
+		display: flex;
+		position: fixed;
+		left: 0;
+		top: 0;
+		height: 100vh;
+		width: 100vw;
+		flex-direction: column;
+		pointer-events: all;
+		justify-content: center;
+		gap: 40px;
+		align-items: center;
+		z-index: 2;
+		animation: fade 0.1s linear;
+		background: #fff;
+		a {
+			color: #000;
+			font-size: 20px;
+		}
+		.menu__item {
+			text-align: center;
+			&:nth-child(4) {
+				visibility: hidden;
+				display: none;
+			}
+		}
+
+		.submenu {
+			position: static;
+			opacity: 1;
+			visibility: visible;
+			transform: rotateX(0);
+			gap: 14px;
+			a {
+				color: #000 !important;
+				font-size: 14px;
+			}
+		}
+	}
+	.with__submenu {
+		position: relative;
+
+		&:hover {
+			> .submenu {
+				opacity: 1;
+				visibility: visible;
+				transform: rotateX(0);
+			}
+		}
+	}
+	// .menu__item
+	&__item {
+		list-style: none;
+	}
+	// .menu__link
+	&__link {
+		font-size: 12.5px;
+		line-height: 1.2;
+		color: white;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	// .menu__logo
+	&__logo {
+		display: none;
+	}
+}
+.submenu {
+	min-width: 170px;
+	position: absolute;
+	left: -8px;
+	z-index: 5;
+	transform: rotateX(-90deg);
+	transform-origin: 0 0;
+	transition: 0.3s linear;
+	visibility: hidden;
+	opacity: 0;
+	background: none;
+	top: 100%;
+	padding-top: 18px;
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+		padding: 0 8px 8px;
+	}
+	li {
+		position: relative;
+	}
+	a {
+		font-size: 12.5px;
+		line-height: 1.2;
+		color: white;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+		display: block;
+	}
+}
+.burger {
+	display: none;
+	background: transparent;
+	z-index: 3;
+	outline: none;
+	border: none;
+	@media screen and (max-width: 991.99px) {
+		display: flex;
+		position: relative;
+		height: 20px;
+		width: 30px;
+
+		&.active {
+			&:before {
+				background: #000;
+				transform: rotate(45deg);
+				transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+				top: 8px;
+			}
+
+			&:after {
+				background: #000;
+				transform: rotate(-45deg);
+				bottom: 10px;
+				transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+			}
+
+			& span {
+				transform: scale(0);
+			}
+		}
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			background: #fff;
+			transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+		}
+
+		&:before {
+			top: 0;
+		}
+
+		&::after {
+			bottom: 0;
+		}
+
+		span {
+			position: absolute;
+			top: 9px;
+			right: 0;
+			width: 100%;
+			background: #fff;
+			height: 2px;
+			transform: scale(1);
+			transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+		}
+	}
 }
