@@ -1,0 +1,367 @@
+// [START] Section Ad ============================================================================================
+.section {
+	// .section__ad
+	&__ad {
+		padding: 50px 0 0;
+		@media (max-width: $breakpoint992) {
+			display: none;
+		}
+	}
+}
+.ad {
+	max-width: 970px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+}
+// [END] Section Ad ==============================================================================================
+
+// [START] Section Destinations ==================================================================================
+.section {
+	// .section__destinations
+	&__destinations {
+		padding-top: 50px;
+		h3 {
+			max-width: 767px;
+			margin: 30px auto 0;
+			width: 100%;
+			text-transform: capitalize;
+			line-height: 1.5;
+
+			a {
+				color: rgb(0, 0, 0);
+				line-height: 1.2;
+				text-transform: lowercase;
+			}
+		}
+	}
+}
+.destination {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 43px;
+	padding: 60px 0;
+
+	&.destination__double {
+		.destination__item-large {
+			grid-column: span 2;
+		}
+		.destination__item-normal {
+			@media (max-width: $breakpoint992) {
+				grid-column: span 2;
+			}
+		}
+	}
+
+	@media (max-width: $breakpoint992) {
+		padding: 30px 0;
+		gap: 60px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media (max-width: $breakpoint768) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	// .destination__item
+	&__item {
+		display: flex;
+		flex-direction: column;
+
+		&.third__item {
+			@media (max-width: $breakpoint992) {
+				grid-column: span 2;
+			}
+			@media (max-width: $breakpoint768) {
+				grid-column: span 1;
+			}
+		}
+	}
+	// .destination__item-image
+	&__item-image {
+		position: relative;
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+		}
+	}
+	// .destination__item-label
+	&__item-label {
+		position: absolute;
+		left: -20px;
+		top: -1px;
+		font-size: 10.417px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+		text-align: center;
+		letter-spacing: 0.06em;
+		transform: rotate(-180deg);
+		writing-mode: vertical-rl; /* Vertical text from left to right */
+		text-orientation: mixed;
+	}
+	// .destination__item-title
+	&__item-title {
+		font-size: 14.583px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+		margin-top: 30px;
+		@media (max-width: $breakpoint768) {
+			margin-top: 18px;
+		}
+	}
+	// .destination__item-text
+	&__item-text {
+		font-size: 12.5px;
+		color: rgb(78, 78, 78);
+		line-height: 1.2;
+		margin-top: 20px;
+		padding-right: 20px;
+		padding-bottom: 28px;
+	}
+	// .destination__item-link
+	&__item-link {
+		display: flex;
+		margin-top: auto;
+		font-size: 12.5px;
+		color: rgb(78, 78, 78);
+		line-height: 1.2;
+		text-underline-offset: 8px;
+	}
+}
+// [END] Section Destinations ====================================================================================
+
+// [START] Section Terms =========================================================================================
+.section {
+	// .section__terms
+	&__terms {
+		padding: 0;
+		h2 {
+			@media (max-width: $breakpoint768) {
+				display: none;
+			}
+		}
+	}
+}
+.terms {
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 80px 0 50px 0;
+	@media (max-width: $breakpoint768) {
+		padding-top: 0;
+	}
+	// .terms__subheader
+	&__subheader {
+		font-size: 33.333px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+		@media (max-width: $breakpoint768) {
+			font-size: 21px;
+		}
+	}
+	// .terms__text
+	&__text {
+		margin-top: 30px;
+		font-size: 12.5px;
+		color: rgb(0, 0, 0);
+		line-height: 1.667;
+		@media (max-width: $breakpoint768) {
+			margin-top: 20px;
+		}
+	}
+	// .terms__list
+	&__list {
+		margin-top: 30px;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		@media (max-width: $breakpoint768) {
+			margin-top: 20px;
+		}
+		li {
+			&:last-child {
+				margin-left: 30px;
+			}
+		}
+	}
+	// .terms__link
+	&__link {
+		font-size: 12.5px;
+		line-height: 1.667;
+		color: #000;
+	}
+}
+// [END] Section Terms ===========================================================================================
+
+// [START] Section Ambassadors ===================================================================================
+.section__destinations-ambassadors {
+	padding: 50px 0;
+	@media (max-width: $breakpoint768) {
+		padding-top: 0;
+	}
+}
+.destinations {
+	// .destinations__ambassadors
+	&__ambassadors {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 24px;
+		max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+		@media (max-width: $breakpoint768) {
+			grid-template-columns: repeat(1, 1fr);
+			gap: 50px;
+		}
+	}
+	// .destinations__ambassadors-image
+	&__ambassadors-image {
+		position: relative;
+		overflow: hidden;
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+		}
+		&:hover {
+			.overlay {
+				opacity: 1;
+			}
+		}
+		.overlay {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 3px;
+			background: rgba(0, 0, 0, 0.5);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			transition: 0.3s opacity;
+			gap: 24px;
+			padding: 60px;
+			opacity: 0;
+			@media (max-width: $breakpoint992) {
+				padding: 20px;
+			}
+			@media (max-width: $breakpoint768) {
+				display: none;
+			}
+			// .overlay__icon
+			&__icon {
+				width: 40px !important;
+			}
+			// .overlay__title
+			&__title {
+				font-size: 25px;
+				text-transform: uppercase;
+				color: rgb(255, 255, 255);
+				line-height: 1.2;
+				text-align: center;
+			}
+			// .overlay__text
+			&__text {
+				font-size: 12.5px;
+				color: rgb(255, 255, 255);
+				line-height: 1.667;
+				text-align: center;
+				max-width: 270px;
+				width: 100%;
+				margin: 0 auto;
+				@media (max-width: $breakpoint992) {
+					max-width: 100%;
+				}
+			}
+			// .overlay__link
+			&__link {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 8px;
+				font-size: 12.5px;
+				width: 100%;
+				color: rgb(255, 255, 255);
+				line-height: 1.2;
+				max-width: fit-content;
+				position: relative;
+				text-decoration: none;
+
+				&:after {
+					position: absolute;
+					content: '';
+					height: 1px;
+					width: 100%;
+					background: #fff;
+					left: 0;
+					bottom: -4px;
+				}
+
+				img {
+					width: 14px;
+				}
+			}
+		}
+	}
+	// .destinations__ambassadors-info
+	&__ambassadors-info {
+		display: none;
+		@media (max-width: $breakpoint768) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 16px 0;
+			gap: 16px;
+		}
+	}
+	// .destinations__ambassadors-name
+	&__ambassadors-name {
+		font-size: 25px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+		text-align: center;
+	}
+	// .destinations__ambassadors-text
+	&__ambassadors-text {
+		font-size: 12.5px;
+		color: rgb(0, 0, 0);
+		line-height: 1.667;
+		text-align: center;
+		padding: 0 55px;
+		@media (max-width: $breakpoint480) {
+			padding: 0 20px;
+		}
+	}
+	// .destinations__ambassadors-link
+	&__ambassadors-link {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 11.667px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+		text-align: center;
+		text-decoration: none;
+		position: relative;
+		&:after {
+			position: absolute;
+			content: '';
+			height: 1px;
+			width: 100%;
+			background: #000;
+			left: 0;
+			bottom: -4px;
+		}
+		img {
+			width: 12px;
+		}
+	}
+}
+
+// [END] Section Ambassadors =====================================================================================
+
+// [START] Section Discover ======================================================================================
+// [END] Section Discover ========================================================================================
+
+// [START] Section Discover ======================================================================================
+// [END] Section Discover ========================================================================================

@@ -451,12 +451,12 @@
 			bottom: -4px;
 		}
 
-		@media (max-width: $breakpoint1200) {
-			display: none;
-		}
-
 		img {
 			width: 14px;
+		}
+
+		@media (max-width: $breakpoint1200) {
+			display: none;
 		}
 	}
 }

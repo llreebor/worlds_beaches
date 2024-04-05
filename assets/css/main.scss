@@ -1,5 +1,10 @@
-// Imports
+// Global Imports
 @import './global.scss';
 @import './header';
-@import './home';
 @import './footer';
+
+// Home Page
+@import './home';
+
+// Destination Page
+@import './destinations';

@@ -13,7 +13,12 @@ body {
 		position: relative;
 	}
 }
-
+.container {
+	max-width: 1448px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 24px;
+}
 section {
 	padding: 80px 0;
 	@media (max-width: $breakpoint992) {

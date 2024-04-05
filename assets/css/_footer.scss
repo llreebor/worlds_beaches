@@ -95,6 +95,7 @@ footer {
 	&__links {
 		display: flex;
 		justify-content: space-between;
+		gap: 10px;
 		@media (max-width: $breakpoint600) {
 			flex-direction: column;
 		}
@@ -191,6 +192,7 @@ footer {
 	}
 	// .footer__form-btn
 	&__form-btn {
+		color: #000;
 		font-size: 12px;
 		text-transform: uppercase;
 		max-width: fit-content;
@@ -221,6 +223,13 @@ footer {
 		.accordion__item-content {
 			@media (max-width: $breakpoint600) {
 				display: none;
+			}
+		}
+
+		&-arrow {
+			transition: 0.3s transform;
+			&.active {
+				transform: rotate(180deg);
 			}
 		}
 	}

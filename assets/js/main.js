@@ -104,6 +104,7 @@ const swiper = new Swiper('.swiper__ambassadors', {
 function accordion() {
 	const items = document.querySelectorAll('.accordion__item-trigger')
 	const contents = document.querySelectorAll('.accordion__item-content')
+	const arrows = document.querySelectorAll('.accordion__item-arrow')
 	if (window.innerWidth < 600) {
 		items.forEach((item, idx) => {
 			item.addEventListener('click', () => {
@@ -112,6 +113,7 @@ function accordion() {
 					parent.classList.remove('accordion__item-active')
 				} else {
 					slideToggle(contents[idx])
+					arrows[idx].classList.toggle('active')
 				}
 			})
 		})
