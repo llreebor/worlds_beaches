@@ -19,23 +19,20 @@
 	</head>
 	<body>
 		<!-- Header -->
-		<div
-			style="
-				height: 80px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				background: red;
-			">
-			HEADER
-		</div>
-		<header style="display: none">
+		<header class="white__header">
 			<nav class="header">
 				<button class="burger">
 					<span></span>
 				</button>
 				<div class="mobile__logo">
-					<img src="./assets/images/mobile__logo.png" alt="logo" />
+					<img
+						class="mobile__logo-main"
+						src="./assets/images/mobile__logo.png"
+						alt="logo" />
+					<img
+						class="mobile__logo-sponsor"
+						src="./assets/images/destination/sponsor.png"
+						alt="logo sponsor" />
 				</div>
 				<!-- Menu -->
 				<ul class="menu">
@@ -59,11 +56,19 @@
 						<a class="menu__link" href="#">DESTINATIONS</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link" href="#">
+						<a class="menu__link with__logos" href="#">
 							<img
-								class="menu__logo"
+								class="menu__logo-scroll"
 								src="./assets/images/header__logo.png"
 								alt="img" />
+							<img
+								class="menu__logo"
+								src="./assets/images/destination/header__logo-white.png"
+								alt="img" />
+							<img
+								class="menu__logo-sponsor"
+								src="./assets/images/destination/sponsor.png"
+								alt="image" />
 						</a>
 					</li>
 					<li class="menu__item">
@@ -586,6 +591,220 @@
 										src="./assets/images/link-icon-black.svg"
 										alt="icon" />
 								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Section Destinaton Sliders -->
+			<section class="section__sliders">
+				<div class="sliders__container">
+					<div class="sliders">
+						<div class="slider">
+							<!-- Slider main container -->
+							<div class="swiper swiper__destination-1">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<img
+											src="./assets/images/destination/slider-1-1png.png"
+											alt="image" />
+									</div>
+									<div class="swiper-slide">
+										<img
+											src="./assets/images/destination/slider-1-2.png"
+											alt="image" />
+									</div>
+									<div class="swiper-slide">
+										<img
+											src="./assets/images/destination/slider-1-1png.png"
+											alt="image" />
+									</div>
+								</div>
+								<!-- If we need pagination -->
+								<div
+									class="swiper-pagination swiper-pagination-destination-1"></div>
+
+								<!-- If we need navigation buttons -->
+								<div
+									class="swiper-button-prev swiper-button-prev-destination-1"></div>
+								<div
+									class="swiper-button-next swiper-button-next-destination-1"></div>
+							</div>
+							<div class="slider__info">
+								<div class="slider__num">#1</div>
+								<div class="slider__titles">
+									<div class="slider__title">TRUNK BAY</div>
+									<div class="slider__text">
+										US VIRGIN ISLANDS
+									</div>
+								</div>
+								<a href="#" class="slider__link">Details</a>
+							</div>
+						</div>
+						<div class="slider">
+							<!-- Slider main container -->
+							<div class="swiper swiper__destination-2">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<img
+											src="./assets/images/destination/slider-2-1.png"
+											alt="image" />
+									</div>
+									<div class="swiper-slide">
+										<img
+											src="./assets/images/destination/slider-2-2.png"
+											alt="image" />
+									</div>
+									<div class="swiper-slide">
+										<img
+											src="./assets/images/destination/slider-2-1.png"
+											alt="image" />
+									</div>
+								</div>
+								<!-- If we need pagination -->
+								<div
+									class="swiper-pagination swiper-pagination-destination-2"></div>
+
+								<!-- If we need navigation buttons -->
+								<div
+									class="swiper-button-prev swiper-button-prev-destination-2"></div>
+								<div
+									class="swiper-button-next swiper-button-next-destination-2"></div>
+							</div>
+							<div class="slider__info">
+								<div class="slider__num">#2</div>
+								<div class="slider__titles">
+									<div class="slider__title">
+										HIDDEN BEACH
+									</div>
+									<div class="slider__text">PHILIPPINES</div>
+								</div>
+								<a href="#" class="slider__link">Details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Section Team -->
+			<section class="section__team">
+				<div class="container">
+					<div class="team">
+						<div class="team__item">
+							<div class="team__image">
+								<img
+									src="./assets/images/destination/team__avatar.png"
+									alt="team avarat" />
+							</div>
+							<p class="team__name">PILOT MADELEINE</p>
+							<a href="#" target="_blank" class="team__link">
+								<span>INSTAGRAM</span>
+								<img
+									src="./assets/images/link-icon-black.svg"
+									alt="icon" />
+							</a>
+						</div>
+						<div class="team__item">
+							<div class="team__image">
+								<img
+									src="./assets/images/destination/team__avatar.png"
+									alt="team avarat" />
+							</div>
+							<p class="team__name">PILOT MADELEINE</p>
+							<a href="#" target="_blank" class="team__link">
+								<span>INSTAGRAM</span>
+								<img
+									src="./assets/images/link-icon-black.svg"
+									alt="icon" />
+							</a>
+						</div>
+						<div class="team__item">
+							<div class="team__image">
+								<img
+									src="./assets/images/destination/team__avatar.png"
+									alt="team avarat" />
+							</div>
+							<p class="team__name">PILOT MADELEINE</p>
+							<a href="#" target="_blank" class="team__link">
+								<span>INSTAGRAM</span>
+								<img
+									src="./assets/images/link-icon-black.svg"
+									alt="icon" />
+							</a>
+						</div>
+						<div class="team__item">
+							<div class="team__image">
+								<img
+									src="./assets/images/destination/team__avatar.png"
+									alt="team avarat" />
+							</div>
+							<p class="team__name">PILOT MADELEINE</p>
+							<a href="#" target="_blank" class="team__link">
+								<span>INSTAGRAM</span>
+								<img
+									src="./assets/images/link-icon-black.svg"
+									alt="icon" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Section Beaches -->
+			<section class="section__beaches">
+				<div class="container">
+					<div class="beaches">
+						<div class="beaches__item">
+							<div class="beaches__image">
+								<img
+									src="./assets/images/destination/beaches-image.png"
+									alt="image" />
+							</div>
+							<div class="beaches__info">
+								<div class="beaches__num">#1</div>
+								<div class="beaches__titles">
+									<div class="beaches__title">TRUNK BAY</div>
+									<div class="beaches__text">
+										US VIRGIN ISLANDS
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="beaches__item">
+							<div class="beaches__image">
+								<img
+									src="./assets/images/destination/beaches-image.png"
+									alt="image" />
+							</div>
+							<div class="beaches__info">
+								<div class="beaches__num">#2</div>
+								<div class="beaches__titles">
+									<div class="beaches__title">TRUNK BAY</div>
+									<div class="beaches__text">
+										US VIRGIN ISLANDS
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="beaches__item">
+							<div class="beaches__image">
+								<img
+									src="./assets/images/destination/beaches-image.png"
+									alt="image" />
+							</div>
+							<div class="beaches__info">
+								<div class="beaches__num">#3</div>
+								<div class="beaches__titles">
+									<div class="beaches__title">TRUNK BAY</div>
+									<div class="beaches__text">
+										US VIRGIN ISLANDS
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

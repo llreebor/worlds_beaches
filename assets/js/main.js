@@ -73,33 +73,84 @@ function toggleMobileDropdown() {
 	})
 }
 toggleMobileDropdown()
-// Ambassador Slider
-const swiper = new Swiper('.swiper__ambassadors', {
+
+// Ambassador Slider Main Page
+if (document.querySelector('.swiper__ambassadors')) {
+	new Swiper('.swiper__ambassadors', {
+		loop: true,
+		parallax: true,
+		centeredSlides: true,
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+
+		breakpoints: {
+			// when window width is >= 320px
+			320: {
+				slidesPerView: 2,
+			},
+
+			// when window width is >= 640px
+			640: {
+				slidesPerView: 4,
+			},
+			1920: {
+				slidesPerView: 5,
+			},
+		},
+	})
+}
+
+// Sliders Destination Page
+new Swiper('.swiper__destination-1', {
+	// Optional parameters
 	loop: true,
-	parallax: true,
-	centeredSlides: true,
+	slidesPerView: 1,
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination-destination-1',
+	},
+
 	// Navigation arrows
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.swiper-button-next-destination-1',
+		prevEl: '.swiper-button-prev-destination-1',
 	},
 
 	breakpoints: {
 		// when window width is >= 320px
 		320: {
-			slidesPerView: 2,
-		},
-
-		// when window width is >= 640px
-		640: {
-			slidesPerView: 4,
-		},
-		1920: {
-			slidesPerView: 5,
+			slidesPerView: 1,
 		},
 	},
 })
+new Swiper('.swiper__destination-2', {
+	// Optional parameters
+	loop: true,
+	slidesPerView: 1,
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination-destination-2',
+	},
 
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next-destination-2',
+		prevEl: '.swiper-button-prev-destination-2',
+	},
+
+	breakpoints: {
+		// when window width is >= 320px
+		320: {
+			slidesPerView: 1,
+		},
+		1200: {
+			slidesPerView: 1,
+		},
+	},
+})
 // Accordion
 function accordion() {
 	const items = document.querySelectorAll('.accordion__item-trigger')

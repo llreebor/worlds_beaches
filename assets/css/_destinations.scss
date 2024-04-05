@@ -3,6 +3,7 @@
 	// .section__ad
 	&__ad {
 		padding: 50px 0 0;
+		margin-top: 147px;
 		@media (max-width: $breakpoint992) {
 			display: none;
 		}
@@ -194,7 +195,7 @@
 
 // [START] Section Ambassadors ===================================================================================
 .section__destinations-ambassadors {
-	padding: 50px 0;
+	padding: 60px 0;
 	@media (max-width: $breakpoint768) {
 		padding-top: 0;
 	}
@@ -357,11 +358,295 @@
 		}
 	}
 }
-
 // [END] Section Ambassadors =====================================================================================
 
-// [START] Section Discover ======================================================================================
-// [END] Section Discover ========================================================================================
+// [START] Section Sliders =======================================================================================
+.section {
+	// .section__sliders
+	&__sliders {
+		padding: 60px 0;
+		@media (max-width: $breakpoint992) {
+			padding: 30px 0;
+		}
+		@media (max-width: $breakpoint768) {
+			padding-top: 0;
+		}
+	}
+}
+.sliders {
+	max-width: 1400px;
+	width: 100%;
+	overflow: hidden;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(2, 49%);
+	gap: 20px;
+	@media (max-width: $breakpoint768) {
+		grid-template-columns: repeat(1, 100%);
+	}
+	&__container {
+		max-width: 1424px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 12px;
+	}
+}
+.slider {
+	.swiper {
+		z-index: 0;
+		.swiper-button-next,
+		.swiper-button-prev {
+			color: #fff;
+			&::after {
+				font-size: 20px;
+			}
+		}
+		.swiper-pagination {
+			bottom: 40px;
+			@media (max-width: $breakpoint1200) {
+				bottom: 10px;
+			}
+		}
+		.swiper-pagination-bullet {
+			background: #c2c0c0;
+			&.swiper-pagination-bullet-active {
+				background: white;
+			}
+		}
+	}
+	.swiper-slide {
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+		}
+	}
+	// .slider__info
+	&__info {
+		padding: 18px;
+		background: #fff;
+		transform: translateY(-25px);
+		margin: 0 40px;
+		display: flex;
+		gap: 10px;
+		@media (max-width: $breakpoint1200) {
+			transform: translateY(0);
+			margin: 0;
+			padding: 12px 0 0;
+		}
+	}
+	// .slider__titles
+	&__titles {
+		display: flex;
+		flex-direction: column;
+	}
+	// .slider__num
+	&__num {
+		width: 32px;
+		font-size: 27px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+		@media (max-width: $breakpoint1200) {
+			font-size: 25px;
+		}
+		@media (max-width: 374px) {
+			font-size: 16px;
+			width: 16px;
+		}
+	}
+	// .slider__title
+	&__title {
+		font-size: 27px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+		@media (max-width: $breakpoint1200) {
+			font-size: 25px;
+		}
+		@media (max-width: 374px) {
+			font-size: 16px;
+		}
+	}
+	// .slider__text
+	&__text {
+		font-size: 12.5px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+	}
+	// .slider__link
+	&__link {
+		font-size: 12.5px;
+		color: rgb(78, 78, 78);
+		line-height: 1.2;
+		text-decoration: underline;
+		text-transform: uppercase;
+		text-underline-offset: 8px;
+		margin-left: auto;
+		margin-top: 12px;
+		@media (max-width: 374px) {
+			margin-top: 5px;
+		}
+	}
+}
+// [END] Section Sliders =========================================================================================
 
-// [START] Section Discover ======================================================================================
-// [END] Section Discover ========================================================================================
+// [START] Section Team ==========================================================================================
+.section {
+	// .section__team
+	&__team {
+		padding: 60px 0;
+		@media (max-width: $breakpoint992) {
+			padding: 30px 0;
+		}
+	}
+}
+.team {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+	@media (max-width: $breakpoint992) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	// .team__item
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+	}
+	// .team__image
+	&__image {
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+		}
+	}
+	// .team__name
+	&__name {
+		font-size: 14.583px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+		text-align: center;
+	}
+	// .team__link
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 11.667px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+		text-align: center;
+		text-decoration: none;
+		position: relative;
+		&:after {
+			position: absolute;
+			content: '';
+			height: 1px;
+			width: 100%;
+			background: #000;
+			left: 0;
+			bottom: -4px;
+		}
+		img {
+			width: 12px;
+		}
+	}
+}
+// [END] Section Team ============================================================================================
+
+// [START] Section Beaches =======================================================================================
+.section {
+	// .section__beaches
+	&__beaches {
+		padding: 60px 0;
+		@media (max-width: $breakpoint992) {
+			padding: 30px 0;
+		}
+	}
+}
+
+.beaches {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+	@media (max-width: $breakpoint992) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media (max-width: $breakpoint768) {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 30px;
+	}
+	// .beaches__item
+	&__item {
+		&:last-child {
+			@media (max-width: $breakpoint992) {
+				grid-column: span 2;
+			}
+			@media (max-width: $breakpoint768) {
+				grid-column: 1;
+			}
+		}
+	}
+	// .beaches__image
+	&__image {
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+		}
+	}
+	// .beaches__info
+	&__info {
+		padding: 18px;
+		background: #fff;
+		transform: translateY(-25px);
+		margin: 0 30px;
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+		@media (max-width: $breakpoint1200) {
+			transform: translateY(0);
+			margin: 0;
+			padding: 12px 0 0;
+		}
+	}
+	// .beaches__num
+	&__num {
+		width: 32px;
+		font-size: 27px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+		@media (max-width: $breakpoint1200) {
+			font-size: 25px;
+		}
+		@media (max-width: 374px) {
+			font-size: 16px;
+			width: 16px;
+		}
+	}
+	// .beaches__titles
+	&__titles {
+		display: flex;
+		flex-direction: column;
+	}
+	// .beaches__title
+	&__title {
+		font-size: 27px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+		@media (max-width: $breakpoint1200) {
+			font-size: 25px;
+		}
+		@media (max-width: 374px) {
+			font-size: 16px;
+		}
+	}
+	// .beaches__text
+	&__text {
+		font-size: 12.5px;
+		color: rgb(0, 0, 0);
+		line-height: 1.2;
+	}
+}
+// [END] Section Beaches =========================================================================================
