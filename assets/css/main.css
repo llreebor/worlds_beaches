@@ -103,6 +103,7 @@ header.active {
   top: 0;
   transition: top 0.3s;
   background-color: rgba(252, 245, 239, 0.7);
+  padding: 10px;
 }
 @media (max-width: 1199.99px) {
   header.active {
@@ -1096,6 +1097,11 @@ footer {
 .section__destinations {
   padding-top: 50px;
 }
+@media (max-width: 991.99px) {
+  .section__destinations {
+    padding-top: 180px;
+  }
+}
 .section__destinations h3 {
   max-width: 767px;
   margin: 30px auto 0;
@@ -1152,6 +1158,19 @@ footer {
 .destination__item-image {
   position: relative;
 }
+@media (max-width: 767.99px) {
+  .destination__item-image--large {
+    display: none;
+  }
+}
+.destination__item-image--small {
+  display: none;
+}
+@media (max-width: 767.99px) {
+  .destination__item-image--small {
+    display: flex;
+  }
+}
 .destination__item-image img {
   max-width: 100%;
   width: 100%;
@@ -1175,6 +1194,7 @@ footer {
   color: rgb(0, 0, 0);
   line-height: 1.2;
   margin-top: 30px;
+  font-weight: 700;
 }
 @media (max-width: 767.99px) {
   .destination__item-title {
@@ -1286,13 +1306,25 @@ footer {
   position: relative;
   overflow: hidden;
 }
+.destinations__ambassadors-image .name {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 41.667px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+@media (max-width: 767.99px) {
+  .destinations__ambassadors-image .name {
+    display: none;
+  }
+}
 .destinations__ambassadors-image img {
   max-width: 100%;
   width: 100%;
   height: auto;
-}
-.destinations__ambassadors-image:hover .overlay {
-  opacity: 1;
 }
 .destinations__ambassadors-image .overlay {
   position: absolute;
@@ -1369,6 +1401,12 @@ footer {
 }
 .destinations__ambassadors-image .overlay__link img {
   width: 14px;
+}
+.destinations__ambassadors-image:hover .overlay {
+  opacity: 1;
+}
+.destinations__ambassadors-image:hover .name {
+  display: none;
 }
 .destinations__ambassadors-info {
   display: none;
@@ -1646,6 +1684,9 @@ footer {
     gap: 30px;
   }
 }
+.beaches__item {
+  text-decoration: none;
+}
 @media (max-width: 991.99px) {
   .beaches__item:last-child {
     grid-column: span 2;
@@ -1742,7 +1783,8 @@ footer {
 .white__header.active {
   top: 0;
   transition: top 0.3s;
-  background: white;
+  background-color: rgba(252, 245, 239, 0.7);
+  border: none;
 }
 @media (max-width: 1199.99px) {
   .white__header.active {
@@ -1785,8 +1827,12 @@ footer {
 .white__header.active .mobile__logo .mobile__logo-sponsor {
   display: none;
 }
+.white__header.active .submenu {
+  top: 19.5px;
+  border: none;
+}
 .white__header.active .submenu__list {
-  background-color: #fff;
+  background-color: rgba(252, 245, 239, 0.7);
 }
 @media (max-width: 1199.99px) {
   .white__header.active .submenu__list {

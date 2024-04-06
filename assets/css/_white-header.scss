@@ -18,7 +18,8 @@
 	&.active {
 		top: 0;
 		transition: top 0.3s;
-		background: white;
+		background-color: rgba(252, 245, 239, 0.7);
+		border: none;
 		@media (max-width: $breakpoint1200) {
 			padding: 20px;
 		}
@@ -63,8 +64,12 @@
 				display: none;
 			}
 		}
+		.submenu {
+			top: 19.5px;
+			border: none;
+		}
 		.submenu__list {
-			background-color: #fff;
+			background-color: rgba(252, 245, 239, 0.7);
 			@media (max-width: $breakpoint1200) {
 				background: transparent;
 			}

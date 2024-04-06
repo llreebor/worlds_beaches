@@ -22,6 +22,9 @@
 	// .section__destinations
 	&__destinations {
 		padding-top: 50px;
+		@media (max-width: $breakpoint992) {
+			padding-top: 180px;
+		}
 		h3 {
 			max-width: 767px;
 			margin: 30px auto 0;
@@ -79,6 +82,17 @@
 	// .destination__item-image
 	&__item-image {
 		position: relative;
+		&--large {
+			@media (max-width: $breakpoint768) {
+				display: none;
+			}
+		}
+		&--small {
+			display: none;
+			@media (max-width: $breakpoint768) {
+				display: flex;
+			}
+		}
 		img {
 			max-width: 100%;
 			width: 100%;
@@ -105,6 +119,7 @@
 		color: rgb(0, 0, 0);
 		line-height: 1.2;
 		margin-top: 30px;
+		font-weight: 700;
 		@media (max-width: $breakpoint768) {
 			margin-top: 18px;
 		}
@@ -218,15 +233,23 @@
 	&__ambassadors-image {
 		position: relative;
 		overflow: hidden;
+		.name {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 41.667px;
+			color: rgb(255, 255, 255);
+			line-height: 1.2;
+			text-transform: uppercase;
+			@media (max-width: $breakpoint768) {
+				display: none;
+			}
+		}
 		img {
 			max-width: 100%;
 			width: 100%;
 			height: auto;
-		}
-		&:hover {
-			.overlay {
-				opacity: 1;
-			}
 		}
 		.overlay {
 			position: absolute;
@@ -301,6 +324,14 @@
 				img {
 					width: 14px;
 				}
+			}
+		}
+		&:hover {
+			.overlay {
+				opacity: 1;
+			}
+			.name {
+				display: none;
 			}
 		}
 	}
@@ -579,6 +610,7 @@
 	}
 	// .beaches__item
 	&__item {
+		text-decoration: none;
 		&:last-child {
 			@media (max-width: $breakpoint992) {
 				grid-column: span 2;
