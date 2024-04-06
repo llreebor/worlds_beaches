@@ -92,6 +92,8 @@
 		}
 		&--small {
 			display: none;
+			aspect-ratio: 1/1;
+
 			@media (max-width: $breakpoint768) {
 				display: flex;
 			}
