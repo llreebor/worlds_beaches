@@ -86,6 +86,7 @@
 	&__item-image {
 		position: relative;
 		&--large {
+			aspect-ratio: auto;
 			@media (max-width: $breakpoint768) {
 				display: none;
 			}

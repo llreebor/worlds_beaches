@@ -1161,6 +1161,9 @@ footer {
 .destination__item-image {
   position: relative;
 }
+.destination__item-image--large {
+  aspect-ratio: auto;
+}
 @media (max-width: 767.99px) {
   .destination__item-image--large {
     display: none;
