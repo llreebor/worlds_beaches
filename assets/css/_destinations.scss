@@ -322,7 +322,6 @@
 	grid-template-columns: repeat(3, 1fr);
 	gap: 43px;
 	padding: 60px 0;
-
 	&.destination__double {
 		.destination__item-large {
 			grid-column: span 2;
@@ -361,6 +360,7 @@
 	// .destination__item-image
 	&__item-image {
 		position: relative;
+		z-index: -1;
 		&--large {
 			aspect-ratio: auto;
 			@media (max-width: $breakpoint768) {

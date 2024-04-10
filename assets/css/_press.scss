@@ -351,6 +351,7 @@
 				width: 100%;
 				justify-content: space-between;
 				margin: 60px auto 0;
+
 				@media (max-width: 768px) {
 					margin: 30px auto 0;
 				}
@@ -359,6 +360,8 @@
 					border: none;
 					background: none;
 					cursor: pointer;
+					color: #000;
+					font-family: 'Montserrat', sans-serif;
 					&-next {
 						padding: 8px;
 						border: none;
@@ -780,5 +783,4 @@
 		}
 	}
 }
-
 // [END] Section Story ===========================================================================================

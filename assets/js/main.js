@@ -75,6 +75,27 @@ function toggleMobileDropdown() {
 }
 toggleMobileDropdown()
 
+// Footer Accordion
+function accordion() {
+	const items = document.querySelectorAll('.accordion__item-trigger')
+	const contents = document.querySelectorAll('.accordion__item-content')
+	const arrows = document.querySelectorAll('.accordion__item-arrow')
+	if (window.innerWidth < 600) {
+		items.forEach((item, idx) => {
+			item.addEventListener('click', () => {
+				const parent = item.parentNode
+				if (parent.classList.contains('accordion__item-active')) {
+					parent.classList.remove('accordion__item-active')
+				} else {
+					slideToggle(contents[idx])
+					arrows[idx].classList.toggle('active')
+				}
+			})
+		})
+	}
+}
+accordion()
+
 /* SLIDE UP */
 let slideUp = (target, duration = 300) => {
 	target.style.transitionProperty = 'height, margin, padding'
@@ -223,26 +244,6 @@ if (document.getElementById('destinations-page')) {
 			},
 		},
 	})
-	// Accordion
-	function accordion() {
-		const items = document.querySelectorAll('.accordion__item-trigger')
-		const contents = document.querySelectorAll('.accordion__item-content')
-		const arrows = document.querySelectorAll('.accordion__item-arrow')
-		if (window.innerWidth < 600) {
-			items.forEach((item, idx) => {
-				item.addEventListener('click', () => {
-					const parent = item.parentNode
-					if (parent.classList.contains('accordion__item-active')) {
-						parent.classList.remove('accordion__item-active')
-					} else {
-						slideToggle(contents[idx])
-						arrows[idx].classList.toggle('active')
-					}
-				})
-			})
-		}
-	}
-	accordion()
 }
 // [END] Destinations Page Scripts ===============================================================================
 
@@ -314,7 +315,6 @@ if (document.getElementById('press-page')) {
 	tabs('.tabs__header', '.tabs__header-item', '.tabs__content-item', 'active')
 
 	// Select
-
 	function createCustomSelects() {
 		const customSelects = document.getElementsByClassName('custom-select')
 		const numOfSelects = customSelects.length
