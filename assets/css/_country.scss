@@ -33,6 +33,16 @@
 		z-index: -1;
 		object-fit: cover;
 	}
+	.country__bg {
+		position: absolute;
+		left: 0;
+		top: 0px;
+		max-width: 100%;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		object-fit: cover;
+	}
 }
 .country {
 	// .country__hero
