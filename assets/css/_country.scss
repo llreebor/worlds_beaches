@@ -1,12 +1,15 @@
 // [START] Hero ==================================================================================================
 .video__wrapper {
-	min-height: 90dvh;
+	min-height: 85dvh;
 	height: 100%;
 	width: 100%;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	@media (max-width: $breakpoint768) {
+		min-height: 75dvh;
+	}
 	&:after {
 		position: absolute;
 		content: '';
