@@ -17,12 +17,14 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
 			rel="stylesheet" />
 	</head>
-	<body id="country-page-with-image">
+	<body id="beach-page">
+		<!-- Vedeo BG -->
 		<div class="video__wrapper">
-			<img
-				class="country__bg"
-				src="./assets/images/country/country-bg.jpeg"
-				alt="bg" />
+			<video
+				src="./assets/images/country/video.mp4"
+				muted
+				autoplay
+				loop></video>
 			<!-- Header -->
 			<header class="white__header gradient__header">
 				<nav class="header">
@@ -198,275 +200,475 @@
 					</div>
 				</nav>
 			</header>
-
-			<div class="container">
-				<div class="country__hero">
-					<p class="country__hero-subtitle">
-						THE BEST BEACHES IN CURAÇAO
-					</p>
-					<p class="country__hero-title">
-						A MORE VIBRANT NEON BLUE THAN YOU’VE EVER SEEN.
-					</p>
-
-					<a href="#" class="country__hero-link">DISCOVER</a>
-				</div>
-			</div>
 		</div>
 		<main>
-			<!-- Section Destinationa -->
-			<section class="section__destinations destination__country">
+			<!-- Beach Info -->
+			<section class="section__beach">
+				<div class="beach">
+					<div class="beach__head">
+						<!-- Prev -->
+						<a href="#" class="beach__nav">
+							<button class="beach__nav-btn prev">
+								<img
+									src="./assets/images/beach/arrow.svg"
+									alt="prev arrow" />
+							</button>
+							<div class="beach__nav-info prev">
+								<p class="beach__nav-info--num">#38</p>
+								<p class="beach__nav-info--title">
+									PLAGE DE SALINE
+								</p>
+								<p class="beach__nav-info--text">ST. BARTH</p>
+							</div>
+						</a>
+
+						<!-- Header -->
+						<div class="beach__header">
+							<p class="beach__header-title">MAUNDAYS BAY</p>
+							<p class="beach__header-subtitle">ANGUILLA</p>
+							<p class="beach__header-icon">
+								<img
+									src="./assets/images/beach/icon.png"
+									alt="icon" />
+							</p>
+							<p class="beach__header-text">#39 IN THE WORLD</p>
+						</div>
+
+						<!-- Next -->
+						<a href="#" class="beach__nav">
+							<div class="beach__nav-info next">
+								<p class="beach__nav-info--num">#40</p>
+								<p class="beach__nav-info--title">
+									PLAYA XPU-HA
+								</p>
+								<p class="beach__nav-info--text">MEXICO</p>
+							</div>
+							<button class="beach__nav-btn next">
+								<img
+									src="./assets/images/beach/arrow.svg"
+									alt="next arrow" />
+							</button>
+						</a>
+					</div>
+					<div class="container">
+						<div class="beach__body">
+							<div class="beach__about">
+								<p class="beach__about-title">
+									SECLUDED, CRESCENT-SHAPED PERFECTION
+								</p>
+								<p class="beach__about-text">
+									Our world is filled with seemingly endless
+									beaches, so to make sure you know exactly
+									which ones to put on the very top of your
+									bucketlist, we give you this extensive and
+									heavily researched list of the top 50
+									beaches in the world. Our world is filled
+									with seemingly endless beaches, so to make
+									sure you know exactly which ones to put on
+									the very top of your bucketlist, we give you
+									this extensive and heavily researched list
+									of the top 50 beaches in the world.
+								</p>
+								<p class="beach__about-text">
+									Our world is filled with seemingly endless
+									beaches, so to make sure you know exactly
+									which ones to put on the very top of your
+									bucketlist, we give you this extensive and
+									heavily researched list of the top 50
+									beaches in the world.
+								</p>
+							</div>
+							<div class="beach__image">
+								<img
+									src="./assets/images/beach/map.jpg"
+									alt="map" />
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<div class="container">
-					<h2>BLUE FLAG BEACHES IN CURAÇAO</h2>
-					<h3>
-						Our world is filled with seemingly endless beaches, so
-						to make sure you know exactly which ones to put on the
-						very top of your bucketlist, we give you this extensive
-						and heavily researched list of the top 50 beaches in the
-						world.
-					</h3>
-
-					<!-- 1 Column -->
-					<div class="destination destination__single">
-						<div class="destination__item">
-							<div class="destination__item-image">
+					<div class="pluses">
+						<div class="pluses__item">
+							<div class="pluses__image">
 								<img
-									class="destination__item-image--large"
-									src="./assets/images/country/country-1.png"
-									alt="destination-image" />
-								<img
-									aria-hidden="true"
-									class="destination__item-image--small"
-									src="./assets/images/destination/destination-image-small.png"
-									alt="destination-image" />
+									src="./assets/images/beach/pluses-1.png"
+									alt="plus image" />
 							</div>
-
-							<p class="destination__item-title">GROTE KNIP</p>
-							<p class="destination__item-subtext">
-								#34 ON THE WORLD’S 50 BEST BEACHES, 2024
-							</p>
-							<p class="destination__item-text">
-								The Caribbean is the most beautiful place in the
-								world and it has the best beaches, so you should
-								click.
-							</p>
-							<a
-								href="#"
-								target="_blank"
-								class="destination__item-link">
-								DISCOVER MORE
-							</a>
+							<div class="pluses__info">
+								<p class="pluses__title">
+									SOUNDTRACK OF NATURE
+								</p>
+								<p class="pluses__text">
+									At Maundays Bay, the only thing you will
+									hear are the sounds of the ocean.
+								</p>
+							</div>
+						</div>
+						<div class="pluses__item">
+							<div class="pluses__image">
+								<img
+									src="./assets/images/beach/pluses-2.png"
+									alt="plus image" />
+							</div>
+							<div class="pluses__info">
+								<p class="pluses__title">EASY TO ENTER</p>
+								<p class="pluses__text">
+									The water at Maundays is very easy to enter,
+									with calm waters and a sandy bottom.
+								</p>
+							</div>
+						</div>
+						<div class="pluses__item">
+							<div class="pluses__image">
+								<img
+									src="./assets/images/beach/pluses-3.png"
+									alt="plus image" />
+							</div>
+							<div class="pluses__info">
+								<p class="pluses__title">NOT TOO CROWDED</p>
+								<p class="pluses__text">
+									Maundays Bay is never crowded, making it
+									very idyllic.
+								</p>
+							</div>
 						</div>
 					</div>
+				</div>
+			</section>
 
-					<!-- 3 Columns -->
-					<div class="destination">
-						<div class="destination__item">
-							<div class="destination__item-image">
-								<img
-									class="destination__item-image--large"
-									src="./assets/images/country/country-2.png"
-									alt="destination-image" />
-								<img
-									aria-hidden="true"
-									class="destination__item-image--small"
-									src="./assets/images/destination/destination-image-small.png"
-									alt="destination-image" />
-							</div>
+			<!-- Images -->
+			<section class="section__images">
+				<div class="images">
+					<div class="images__item">
+						<img
+							src="./assets/images/beach/images-1.png"
+							alt="image" />
+						<!-- Add span element with text (see example) -->
+						<p class="images__item-text"></p>
+					</div>
+					<div class="images__item">
+						<img
+							src="./assets/images/beach/images-2.png"
+							alt="image" />
+						<!-- Example -->
+						<p class="images__item-text">
+							<span>TINE FALKENBERG HOLST</span>
+						</p>
+					</div>
+					<div class="images__item">
+						<img
+							src="./assets/images/beach/images-3.png"
+							alt="image" />
+						<!-- Add span element with text (see example) -->
+						<p class="images__item-text"></p>
+					</div>
+				</div>
+			</section>
 
-							<p class="destination__item-title">KLEIN KNIP</p>
-							<p class="destination__item-text">
-								The Caribbean is the most beautiful place in the
-								world and it has the best beaches, so you should
-								click.
-							</p>
-							<a
-								href="#"
-								target="_blank"
-								class="destination__item-link">
-								DISCOVER MORE
+			<!-- Hotel & Image BG -->
+			<section class="section__hotel">
+				<div class="container">
+					<div class="hotel__titles">
+						<p>
+							“Maundays Bay is almost too perfect to be real. The
+							crescent shape is total perfection. As is the sand
+							and the aquarium-like water.”
+						</p>
+						<p>
+							-Bobby Heard,
+							<a href="mailto:worlds50beaches.com">
+								worlds50beaches.com
 							</a>
-						</div>
-						<div class="destination__item">
-							<div class="destination__item-image">
-								<img
-									class="destination__item-image--large"
-									src="./assets/images/country/country-3.png"
-									alt="destination-image" />
-								<img
-									aria-hidden="true"
-									class="destination__item-image--small"
-									src="./assets/images/destination/destination-image-small.png"
-									alt="destination-image" />
-							</div>
-
-							<p class="destination__item-title">CAS ABAO</p>
-							<p class="destination__item-text">
-								The Caribbean is the most beautiful place in the
-								world and it has the best beaches, so you should
-								click.
-							</p>
-							<a
-								href="#"
-								target="_blank"
-								class="destination__item-link">
-								DISCOVER MORE
-							</a>
-						</div>
-						<div class="destination__item third__item">
-							<div class="destination__item-image">
-								<img
-									class="destination__item-image--large"
-									src="./assets/images/country/country-4.png"
-									alt="destination-image" />
-								<img
-									aria-hidden="true"
-									class="destination__item-image--small"
-									src="./assets/images/destination/destination-image-small.png"
-									alt="destination-image" />
-							</div>
-
-							<p class="destination__item-title">
-								PLAYA PORTO MARIE
-							</p>
-							<p class="destination__item-text">
-								The Caribbean is the most beautiful place in the
-								world and it has the best beaches, so you should
-								click.
-							</p>
-							<a
-								href="#"
-								target="_blank"
-								class="destination__item-link">
-								DISCOVER MORE
-							</a>
-						</div>
+						</p>
 					</div>
 
-					<!-- 2 Columns -->
-					<div class="destination destination__double">
-						<div class="destination__item">
-							<div class="destination__item-image">
-								<img
-									class="destination__item-image--large"
-									src="./assets/images/country/country-5.png"
-									alt="destination-image" />
-								<img
-									aria-hidden="true"
-									class="destination__item-image--small"
-									src="./assets/images/destination/destination-image-small.png"
-									alt="destination-image" />
-							</div>
-
-							<p class="destination__item-title">KLEIN CURAÇAO</p>
-
-							<p class="destination__item-text">
-								The Caribbean is the most beautiful place in the
-								world and it has the best beaches, so you should
-								click.
-							</p>
-							<a
-								href="#"
-								target="_blank"
-								class="destination__item-link">
-								DISCOVER MORE
-							</a>
+					<div class="hotel">
+						<div class="hotel__image">
+							<p class="hotel__subtitle-mob">FEATURED HOTEL</p>
+							<img
+								src="./assets/images/beach/hotel.png"
+								alt="hotel image" />
 						</div>
-						<div class="destination__item">
-							<div class="destination__item-image">
-								<img
-									class="destination__item-image--large"
-									src="./assets/images/country/country-5.png"
-									alt="destination-image" />
-								<img
-									aria-hidden="true"
-									class="destination__item-image--small"
-									src="./assets/images/destination/destination-image-small.png"
-									alt="destination-image" />
-							</div>
-
-							<p class="destination__item-title">KLEIN CURAÇAO</p>
-
-							<p class="destination__item-text">
-								The Caribbean is the most beautiful place in the
-								world and it has the best beaches, so you should
-								click.
+						<div class="hotel__info">
+							<p class="hotel__subtitle">FEATURED HOTEL</p>
+							<p class="hotel__name">BELMOND CAP JULUCA</p>
+							<p class="hotel__text">
+								Experience the next level of excellence. Our
+								Signature Suites & Villas collection promises an
+								exceptional level of elevated service—so step
+								inside and discover spaces appointed with every
+								indulgence that’s exclusively yours.
 							</p>
-							<a
-								href="#"
-								target="_blank"
-								class="destination__item-link">
-								DISCOVER MORE
-							</a>
-						</div>
-					</div>
 
-					<div class="about">
-						<div class="about__item">
-							<div class="destination__item">
-								<div class="destination__item-image">
-									<img
-										class="destination__item-image"
-										src="./assets/images/country/country-6.png"
-										alt="destination-image" />
-									<p class="destination__item-label">
-										SHOAL BAY EAST
+							<ul class="hotel__list">
+								<li>
+									<p>Round-trip transfers</p>
+								</li>
+								<li>
+									<p>Dedicated Host service</p>
+								</li>
+								<li>
+									<p>Daily breakfast</p>
+								</li>
+								<li>
+									<p>Complimentary laundry service</p>
+								</li>
+								<li>
+									<p>
+										Complimentary curated in-suite bar and
+										coffee
 									</p>
-								</div>
-							</div>
+								</li>
+								<li>
+									<p>
+										A fully bespoke VIP stay experience,
+										tailored to your preferences
+									</p>
+								</li>
+							</ul>
+
+							<a href="#" class="hotel__btn">
+								LEARN MORE AND BOOK
+							</a>
 						</div>
-						<div class="about__item">
-							<div class="about__item-header">
-								<p class="about__item-subtitle">
-									THE PERFECT BEACH DAY
+					</div>
+				</div>
+
+				<div class="image__bg">
+					<div class="images__item">
+						<img
+							src="./assets/images/beach/image__bg.png"
+							alt="image" />
+						<!-- Add span element with text (see example) -->
+						<p class="images__item-text">
+							<span>TINE FALKENBERG HOLST</span>
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Weather & More -->
+			<section class="section__more">
+				<div class="container">
+					<div class="more">
+						<div class="more__item">
+							<p class="more__item-title">
+								MAUNDAYS BAY WEATHER AVERAGES
+							</p>
+							<table class="weather__table">
+								<thead>
+									<tr>
+										<td class="first__cell"></td>
+										<td>AVG. HIGH</td>
+										<td>AVG. LOW</td>
+										<td>RAINY DAYS</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="first__cell">JANUARY</td>
+										<td>
+											<span>28</span>
+											&#176;
+										</td>
+										<td>
+											<span>23</span>
+											&#176;
+										</td>
+										<td>3.1</td>
+									</tr>
+									<tr>
+										<td class="first__cell">february</td>
+										<td>
+											<span>28</span>
+											&#176;
+										</td>
+										<td>
+											<span>23</span>
+											&#176;
+										</td>
+										<td>3.1</td>
+									</tr>
+									<tr>
+										<td class="first__cell">MARCH</td>
+										<td>
+											<span>28</span>
+											&#176;
+										</td>
+										<td>
+											<span>23</span>
+											&#176;
+										</td>
+										<td>3.1</td>
+									</tr>
+									<tr>
+										<td class="first__cell">APRIL</td>
+										<td>
+											<span>28</span>
+											&#176;
+										</td>
+										<td>
+											<span>23</span>
+											&#176;
+										</td>
+										<td>3.1</td>
+									</tr>
+									<tr>
+										<td class="first__cell">MAY</td>
+										<td>
+											<span>28</span>
+											&#176;
+										</td>
+										<td>
+											<span>23</span>
+											&#176;
+										</td>
+										<td>3.1</td>
+									</tr>
+									<tr>
+										<td class="first__cell">JUNE</td>
+										<td>
+											<span>28</span>
+											&#176;
+										</td>
+										<td>
+											<span>23</span>
+											&#176;
+										</td>
+										<td>3.1</td>
+									</tr>
+									<tr>
+										<td class="first__cell">JULY</td>
+										<td>
+											<span>28</span>
+											&#176;
+										</td>
+										<td>
+											<span>23</span>
+											&#176;
+										</td>
+										<td>3.1</td>
+									</tr>
+									<tr>
+										<td class="first__cell">AUGUST</td>
+										<td>
+											<span>28</span>
+											&#176;
+										</td>
+										<td>
+											<span>23</span>
+											&#176;
+										</td>
+										<td>3.1</td>
+									</tr>
+									<tr>
+										<td class="first__cell">SEPTEBMER</td>
+										<td>
+											<span>28</span>
+											&#176;
+										</td>
+										<td>
+											<span>23</span>
+											&#176;
+										</td>
+										<td>3.1</td>
+									</tr>
+									<tr>
+										<td class="first__cell">OCTOBER</td>
+										<td>
+											<span>28</span>
+											&#176;
+										</td>
+										<td>
+											<span>23</span>
+											&#176;
+										</td>
+										<td>3.1</td>
+									</tr>
+									<tr>
+										<td class="first__cell">NOVEMBER</td>
+										<td>
+											<span>28</span>
+											&#176;
+										</td>
+										<td>
+											<span>23</span>
+											&#176;
+										</td>
+										<td>3.1</td>
+									</tr>
+									<tr>
+										<td class="first__cell">DECEMBER</td>
+										<td>
+											<span>28</span>
+											&#176;
+										</td>
+										<td>
+											<span>23</span>
+											&#176;
+										</td>
+										<td>3.1</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<a
+								href="#"
+								target="_blank"
+								class="slide__content-link more__item-link">
+								<span>IN-DEPTH MAUNDAYS BAY WEATHER DATA</span>
+								<img
+									src="./assets/images/link-icon-black.svg"
+									alt="icon" />
+							</a>
+						</div>
+						<div class="more__item more__item-right">
+							<div class="more__info">
+								<p class="more__info-title">
+									THE PERFECT DAY AT MAUNDAYS BAY
 								</p>
-							</div>
-							<div class="about__item-body">
-								<p class="about__item-title">
-									ENJOY CURAÇAO PERFECTION
-								</p>
-								<p class="about__item-text">
-									No matter where you travel, wind, rough seas
-									and clouds ruin more beach days than
-									anything else. Curaçao is no different.
-									Follow these tips to hit the beach the way
-									it looks in postcards:
-								</p>
-								<ul class="about__item-list">
+								<ul class="more__info-list">
 									<li>
+										<p><b>WIND DIRECTION</b></p>
 										<p>
-											Curaçao’s beaches are excellent
-											year-round, but busier in the high
-											season of December-April.
+											Look for days where the wind will be
+											blowing from behind the beach
+											towards the water.
 										</p>
 									</li>
 									<li>
+										<p><b>CLEAR SKIES</b></p>
 										<p>
-											The summer monthS typically
-											experience more cloudy days than
-											you’d expect.
+											Sunny days are more likely between
+											December to April, however visits
+											during May through November are
+											underrated, with calmer seas.
 										</p>
 									</li>
 									<li>
+										<p><b>SEAWEED</b></p>
 										<p>
-											The wind almost always comes from
-											the east, and the best beaches are
-											on the west coast.
+											Since 2010, south-facing beaches in
+											the Caribbean (including Maundays
+											Bay) have had significant amounts of
+											seaweed washing ashore. This occurs
+											most often between May and August.
 										</p>
 									</li>
 									<li>
+										<p><b>CALM SEAS</b></p>
 										<p>
-											For optimal conditions, look for
-											sunny days with little wind that is
-											coming from the east.
+											Though there is a very small risk of
+											hurricanes, and there are more rainy
+											days, the ocean is much calmer May
+											through November. We particularly
+											love the Caribean in October and
+											November, the ocean is in a postcard
+											state if there are clear skies.
 										</p>
 									</li>
 								</ul>
-								<a
-									href="#"
-									target="_blank"
-									class="destination__item-link about__item-link">
-									CURACAO’S WEATHER DATA
-								</a>
 							</div>
 						</div>
 					</div>
